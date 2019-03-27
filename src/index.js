@@ -9,7 +9,7 @@ const server = require('http').Server(app)
 const io = require('socket.io')(server)
 
 mongoose.connect(
-    'mongodb://goweek:goweek123@ds133231.mlab.com:33231/goweek',
+    'mongodb://root:root123@ds125616.mlab.com:25616/clone-twitter',
 
     {
         useNewUrlParser: true
@@ -29,5 +29,5 @@ app.use(express.json())
 app.use(require('./routes'))
 
 server.listen(3000, () => {
-    console.log('Server started at 3000')
+    console.log('Server iniciado, 3000')
 })
